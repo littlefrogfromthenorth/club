@@ -20,9 +20,6 @@ RUN useradd -m -s /bin/bash club \
 COPY ./club/bin /club/bin
 COPY ./club/configs /club/configs
 COPY ./club/entrypoint.sh /club/entrypoint.sh
-COPY ./club/server.zip /club/server.zip
-
-RUN unzip /club/server.zip
 
 # 设置工作目录
 WORKDIR /root
